@@ -12,7 +12,11 @@ const Button = ({children,type,onClick,buttonStyle,buttonSize}) => {
     return (
         <div>
             <Link to="sign-up" class="btn-mobile">
-                <button>
+                <button
+                className={`btn ${checkButtonStyle} ${checkButtonSizes}`}
+                onClick={onClick}
+                type={type}
+                >
                     {children} 
                 </button>
             </Link>            
