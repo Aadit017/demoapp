@@ -5,7 +5,7 @@ import Card from '../Card/Card.component';
 
 const Home = () => {
     return (
-        <div className="home">
+        <div >
           <HeroSection />  
           <Card />
         </div>
