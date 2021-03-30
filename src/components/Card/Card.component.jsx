@@ -22,19 +22,19 @@ const Card = () => {
                     <CardList 
                         src={img6}
                         text="Roam the streets of New York City with us "
-                        label="Adventure"
+                        label="Busy"
                         path="/services"
                     />
                     <CardList 
                         src={img7}
                         text="If you wanna succeed in life , you need to put in the efforts "
-                        label="Adventure"
+                        label="HardWork"
                         path="/services"
                     />
                     <CardList 
                         src={img5}
                         text="Wanna explore the old lost cafe with us   "
-                        label="Adventure"
+                        label="Old"
                         path="/services"
                     />
                 </ul>
