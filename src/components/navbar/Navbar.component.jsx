@@ -29,7 +29,9 @@ const Navbar = () => {
         
         <nav className="navbar">
             <div className="navbar-container">
-                <Link to="/" className="navbar-logo" onClick={closeMobileMenu}>ASB</Link>
+                <Link to="/" className="navbar-logo" onClick={closeMobileMenu}>
+                <i class="fas fa-globe-europe"></i>
+                </Link>
             <div className="menu-icon" onClick={handleClick}>
                {
                    click ? (<CloseIcon className="fas fa-times"/>) : (<MenuIcon className="fas fa-bars"
