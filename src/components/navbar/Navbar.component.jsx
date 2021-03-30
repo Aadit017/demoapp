@@ -1,4 +1,4 @@
-import React,{useState} from 'react'
+import React,{useState,useEffect} from 'react'
 import { Link} from 'react-router-dom';
 import MenuIcon from '@material-ui/icons/Menu';
 import CloseIcon from '@material-ui/icons/Close';
@@ -20,13 +20,16 @@ const Navbar = () => {
             setButton(true)
         }
     }
+    useEffect(()=>{
+        showButton()
+    },[])
     window.addEventListener('resize',showButton)
     return (
         <>
         
         <nav className="navbar">
             <div className="navbar-container">
-                <Link to="/" className="navbar-logo">ASB</Link>
+                <Link to="/" className="navbar-logo" onClick={closeMobileMenu}>ASB</Link>
             <div className="menu-icon" onClick={handleClick}>
                {
                    click ? (<CloseIcon className="fas fa-times"/>) : (<MenuIcon className="fas fa-bars"
